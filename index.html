@@ -45,7 +45,7 @@ body{font-family:var(--sans);color:var(--dark);background:var(--white);overflow-
 nav{position:fixed;top:0;left:0;right:0;z-index:999;transition:transform 0.4s ease,background 0.4s ease;background:#ffffff;border-bottom:1px solid rgba(201,168,76,0.2)}
 nav.hidden{transform:translateY(-100%)}
 .nav-inner{max-width:1200px;margin:0 auto;padding:10px 40px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo img{height:80px;width:auto}
+.nav-logo img{height:120px;width:auto}
 .nav-cta{background:var(--gold);color:#fff;padding:12px 28px;font-family:var(--sans);font-size:12px;letter-spacing:0.15em;text-decoration:none;text-transform:uppercase;transition:all 0.3s;border:1px solid var(--gold)}
 .nav-cta:hover{background:transparent;color:var(--gold)}
 @media(max-width:768px){.nav-inner{padding:8px 20px}.nav-logo img{height:60px}}
@@ -131,7 +131,7 @@ nav.hidden{transform:translateY(-100%)}
 /* LA SOLUZIONE */
 .solution-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .solution-image{position:relative}
-.solution-image img{width:100%;height:500px;object-fit:cover;display:block}
+.solution-image img{width:100%;height:500px;object-fit:cover;display:block;object-position: bottom;}
 .solution-image-tag{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(26,26,26,0.8),transparent);padding:32px;color:#fff}
 .solution-image-tag p{font-family:var(--serif);font-size:18px;font-style:italic;margin-bottom:4px}
 .solution-image-tag span{font-family:var(--sans);font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold-light)}
@@ -242,7 +242,7 @@ footer{background:var(--dark);padding:60px 40px 30px}
 .roberta-section{background:var(--off-white);padding:100px 40px}
 .roberta-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:center}
 .roberta-image{position:relative}
-.roberta-image img{width:100%;height:560px;object-fit:cover;object-position:center top;display:block;filter:grayscale(15%)}
+.roberta-image img{width:100%;height:560px;object-fit:cover;object-position:center;display:block;filter:grayscale(15%)}
 .roberta-image::before{content:'';position:absolute;top:-16px;left:-16px;right:16px;bottom:16px;border:1px solid var(--gold);z-index:0;pointer-events:none}
 .roberta-image img{position:relative;z-index:1}
 .roberta-numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
